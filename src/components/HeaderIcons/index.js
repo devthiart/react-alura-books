@@ -1,21 +1,31 @@
-import './style.css';
 import profile from '../../imgs/perfil.svg';
 import bag from '../../imgs/sacola.svg';
+import styled from 'styled-components';
 
 const icons = [
   { src: profile, alt: 'Ícone de perfil' },  
   { src: bag, alt: 'Ícone da sacola' }
 ];
 
+const Icon = styled.li`
+  margin-right: 40px;
+  width: 25px;
+`;
+
+const IconList = styled.ul`
+  display: flex;
+  align-items: center;
+`;
+
 function HeaderIcons() {
   return (
-    <ul className="icons-list">
+    <IconList>
       { 
         icons.map( (icon, index) => (
-          <li key={index} className="icon"><img src={icon.src} alt={icon.alt}></img></li>
+          <Icon key={index}><img src={icon.src} alt={icon.alt}></img></Icon>
         )) 
       }
-    </ul>
+    </IconList>
   )
 }
 
