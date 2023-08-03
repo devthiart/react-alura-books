@@ -17,7 +17,7 @@ const OptionList = styled.ul`
   display: flex;
 `;
 
-const textOptions = ['Categorias', 'Favoritos', 'Minha Estante'];
+const textOptions = ['Categories', 'Favorites', 'My Bookcase'];
 
 function HeaderOptions() {
   return (
