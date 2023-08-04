@@ -68,7 +68,7 @@ function Search() {
 
         }}
       />
-
+      
       { researchedBooks.map( (book, index) => (
         <BookContainer key={ index }>
           <p>{ book.name }</p>
